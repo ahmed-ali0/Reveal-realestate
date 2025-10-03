@@ -1,0 +1,160 @@
+@import url('font.css');
+
+/* #44576d */
+/* #aac7d8 */
+/* #e6e6e6 */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body::-webkit-scrollbar 
+{
+    width: 5px;
+    background-color: #18343e;
+}
+body::-webkit-scrollbar-thumb 
+{
+    border-left: 2px solid #dfebf6;
+    background-color: transparent   ;
+    border-radius: 10px;
+}
+@keyframes SlideFromdistance
+{
+    from
+    {
+        transform:  scale(0.95);
+        opacity: 0.5;
+    }
+    to
+    {
+        transform: scale(1);
+        opacity: 1s;
+    }
+}
+body
+{
+    animation:SlideFromdistance 0.4s ease-out ;
+background-position: center;
+background-attachment: fixed;
+background-image: url(../img/intro.jpg);
+background-size: 100% 100%;
+backdrop-filter: blur(10px);
+}
+.header
+{
+    background-size:cover;
+    height:500px;
+    background-size: cover;
+    margin: 0;
+    margin-top: 30px ;
+}
+.header h1
+{
+    color: #44576d;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    margin-left: 60px;
+    font-size:80px;
+    text-shadow: 2px 2px 5px #44576d7a;
+    transition: 0.5s;
+}
+.header h1:hover
+{
+    left: 10%;
+}
+.header h1::first-line
+{
+    color: #aac7d8;
+    text-shadow: 2px 2px 5px #44576d;
+}
+.container
+{
+    height: 570px;
+    display: flex;
+    margin:130px 100px 0 100px ;  
+    padding-bottom: 100px;
+}
+.intro
+{
+    display: contents;
+}
+.intro img
+{
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: -5px -5px 0px #aac7d8;
+    transition-duration: 0.5s;
+}
+.intro img:hover
+{
+    transform: scale(1.03);
+}
+.intro p
+{
+    padding: 30px;
+    border-radius: 30px;
+    text-shadow: 2px 2px 5px #1c23276b ;
+    font-size: large;
+    text-align: right;
+    margin: 30px 110px 30px 110px;
+    color: #e6e6e6;
+    text-shadow: 2px 2px 5px #44576d;
+    background-color:#44576d60;
+    backdrop-filter: blur(5px);
+    height: fit-content;
+    box-shadow: 25px 200px 0px #44576d;
+    position: relative;
+    right: -100px;
+    transition-duration: 0.5s;
+}
+.intro p:hover
+{
+    transform: scale(1.03);
+}
+.intro p::first-line
+{
+    text-wrap: nowrap;
+    font-size: 50px;
+}
+nav .navbar
+{
+    padding: 5px 10% 5px 5%;
+    background-color:#aac7d850;
+    backdrop-filter: blur(10px);
+}
+.view
+{
+    position: relative;
+    width: 90%;
+    padding: 40PX;
+    bottom: 50px;
+    left: 30px;
+    background-image: linear-gradient( to right, #44576de3 10% , #44576d00 90% );
+    margin-top:100px;
+    border-radius:50px;
+    transition-duration:1s; 
+}
+a
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight:800;
+    font-size: 70px;
+    color: #aac7d8;
+    width:800px ;   
+    text-decoration: none;
+}
+.view:hover 
+{
+    left: 80px;
+    padding-left: 140px;
+}
+img
+{
+    width: 180px;
+}
